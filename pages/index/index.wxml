@@ -1,0 +1,46 @@
+ <!-- <view class="data">展示数据</view> 
+<view wx:for="{{list}}">
+  StuID: {{item.stuID}}
+  StuName: {{item.stuName}}
+  StuPhone: {{item.stuPhone}}
+  StuAddress:{{item.stuAddress}}
+</view>  -->
+
+<view class="table">
+  <text></text>
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+  <view >
+   
+    <view   wx:for = "{{list}}" wx:key="" class="myview">  
+    <view><text class="table-td">编号：{{item.stuID}}</text></view>
+     <view><text class="table-td">姓名：{{item.stuName}}</text></view>
+     <view><text class="table-td">电话：{{item.stuPhone}}</text></view>
+     <view><text class="table-td">地址：{{item.stuAddress}}</text></view>
+     <view><button data-editid="{{index}}" class="mybutton" bindtap="change">修改</button></view>
+      <view><button data-deleteid="{{item.stuID}}" class="mybutton" bindtap="mydelete">删除</button></view>
+    </view>
+  </view>
+  </scroll-view>
+  <button bindtap="addStudent">添加用户</button>
+</view> 
+
+
+<!-- <view class="table">
+  <view class="tr bg-w">
+    <view class="th">编号</view>
+    <view class="th">名称</view>
+    <view class="th ">学生电话</view>
+    <view class="th ">学生地址</view>
+  <view class="th ">操作</view>
+  </view>
+  <block wx:for="{{items}}" wx:key="">
+    <view class="tr bg-g" >
+      <view class="td">{{item.stuID}}</view>
+      <view class="td">{{item.stuName}}</view>
+      <view class="td">{{item.stuPhone}}</view>
+      <view class="td">{{item.stuAddress}}</view>
+    </view>
+   
+  </block>
+
+</view> -->

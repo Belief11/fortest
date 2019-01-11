@@ -1,0 +1,8 @@
+<view class="data"></view>
+<view >
+   <view class="myrow">姓名:<input class="mytext" type="text" bindinput='getName'> </input></view>
+    <view class="myrow"> 电话:<input class="mytext" type="text"  bindinput='getPhone'> </input></view>
+     <view class="myrow">地址:<input class="mytext" type="text" bindinput='getAddress'> </input></view>
+     <view class="myview"><button  class="mybutton" bindtap="edit">提交</button>
+     <button  class="mybutton" bindtap="mydelete">重置</button></view>
+</view>
