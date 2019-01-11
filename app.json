@@ -8,7 +8,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "学生信息",
+    "navigationBarTitleText": "全部学生信息",
     "navigationBarTextStyle":"black"
   }
 }
